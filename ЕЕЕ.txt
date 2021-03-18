@@ -1,0 +1,15 @@
+ledPin = [24,25,8,7,12,16,20,21,10,9,11,5,6,13,19,26]
+GPIO.setup(ledPin, GPIO.OUT)
+GPIO.output(ledPin,1)
+lightdown(led_number, period):
+GPIO.output(led_number, 0)
+time.sleep(0.5)
+GPIO.output(led_number, 1)
+
+
+
+
+def runningDark(count,period)
+    for k in range(0,count):
+        for i in range(0, 16):
+            lightdown(i, period)
